@@ -1,7 +1,7 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    {% In {{ 'now' | date('F') }} you can plant:
+    In {{ 'now' | date('F') }} you can plant:
 
     {% for crop in crops %}
         {{ crop }}
