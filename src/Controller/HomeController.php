@@ -15,7 +15,7 @@ class HomeController extends AbstractController
     {
         return $this->render('home.html.twig', [
             'crops' => array_map(function (Crop $crop) {
-                return $crop->title;
+                return $crop->getCommonName();
             }, $cropsByMonth->getCropsToPlantInCurrentMonth())
         ]);
     }
