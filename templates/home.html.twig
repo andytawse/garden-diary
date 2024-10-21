@@ -1,7 +1,9 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-	It's {{ month }}.
+	In {{ 'now' | date('F') }} you can plant:
 
-	Plant: onion sets...
+	{% for crop in crops %}
+		{{ crop }}
+	{% endfor %}
 {% endblock %}
