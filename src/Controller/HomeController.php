@@ -10,13 +10,13 @@ use App\Entity\Crop;
 
 class HomeController extends AbstractController
 {
-	#[Route('/')]
-	public function home(CropsByMonth $cropsByMonth)
-	{
-		return $this->render('home.html.twig', [
-			'crops' => array_map(function (Crop $crop) { 
-					return $crop->title; 
-				}, $cropsByMonth->getCropsToPlantInCurrentMonth())
-		]);
-	}
+    #[Route('/')]
+    public function home(CropsByMonth $cropsByMonth)
+    {
+        return $this->render('home.html.twig', [
+            'crops' => array_map(function (Crop $crop) {
+                return $crop->title;
+            }, $cropsByMonth->getCropsToPlantInCurrentMonth())
+        ]);
+    }
 }
