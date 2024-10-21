@@ -25,3 +25,5 @@
 ###< symfony/asset-mapper ###
 
 *.swp
+
+tools/*/vendor
