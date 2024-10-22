@@ -1,4 +1,4 @@
-# Symphony Re-Familiarisation Project
+# Symfony Re-Familiarisation Project
 
 ## Garden Diary
 
