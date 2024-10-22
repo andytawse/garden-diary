@@ -1,9 +1,11 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    In {{ 'now' | date('F') }} you can plant:
+    <div class="currentMonth">
+        In {{ 'now' | date('F') }} you can plant:
 
-    {% for crop in crops %}
-        {{ crop }}
-    {% endfor %}
+        {% for crop in crops %}
+            {{ crop }}
+        {% endfor %}
+    </div>    
 {% endblock %}
