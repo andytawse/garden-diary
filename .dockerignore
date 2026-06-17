@@ -1,0 +1,9 @@
+.git/
+var/
+vendor/
+public/bundles/
+assets/vendor/
+tools/php-cs-fixer/vendor/
+.env.local
+.env.*.local
+*.swp
